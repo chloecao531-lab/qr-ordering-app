@@ -117,8 +117,9 @@ export default function OrderPage({ params }) {
           <h2>Items</h2>
           <ul>
             {order.items.map((item) => (
-              <li key={item.id}>
+              <li key={item.cartKey || item.id}>
                 {item.name} x {item.quantity} (${(item.price * item.quantity).toFixed(2)})
+                {item.optionSummary && <div>{item.optionSummary}</div>}
               </li>
             ))}
           </ul>
