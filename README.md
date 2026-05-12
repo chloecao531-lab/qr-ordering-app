@@ -4,8 +4,8 @@ A beginner-friendly QR ordering web app built with **Next.js App Router** and **
 
 ## Features
 
-- Customer page at `/customer`
-- Supports table number from URL, example: `/customer?table=5`
+- Customer page at `/menu`
+- Supports table number from URL, example: `/menu?table=5`
 - Add to cart and adjust quantity using `+` and `-`
 - Submit orders to SQLite
 - Admin page at `/admin`

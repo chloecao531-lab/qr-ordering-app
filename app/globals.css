@@ -65,3 +65,133 @@ button:disabled {
   color: #0f4c81;
   text-decoration: none;
 }
+
+.menu-page {
+  max-width: 1180px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.menu-header p {
+  margin: 4px 0 0;
+}
+
+.table-card {
+  font-size: 18px;
+}
+
+.order-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+.menu-category {
+  margin-bottom: 24px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.menu-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+}
+
+.menu-item-card h3 {
+  margin: 0 0 8px;
+}
+
+.menu-item-card p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.menu-item-top,
+.menu-item-actions,
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.menu-item-top {
+  align-items: flex-start;
+}
+
+.menu-item-actions,
+.cart-item {
+  align-items: center;
+}
+
+.menu-item-actions {
+  margin-top: 16px;
+}
+
+.spicy-badge {
+  background: #fee2e2;
+  color: #991b1b;
+  white-space: nowrap;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart-panel {
+  position: sticky;
+  top: 16px;
+}
+
+.cart-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 12px;
+  font: inherit;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+@media (max-width: 820px) {
+  .menu-header,
+  .order-layout,
+  .menu-grid {
+    display: block;
+  }
+
+  .cart-panel {
+    position: static;
+  }
+
+  .menu-item-card {
+    min-height: auto;
+  }
+}
